@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video Player</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="big_wrap_video">
+	<div class="video_wrap_st" id="playercontainer">
+		<i class="fa fa-times" aria-hidden="true"><p>close</p></i>
+		<video id="player" src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4"></video>
+		<div id="controls">
+			<div id="progressholder">
+				<div id="buffered"></div>
+				<div id="progress"></div>
+				<!-- <div id="progressorb"></div> -->
+			</div>
+			<input type="range" id="volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+			<div id="playpause" class="fa fa-play"></div>
+			<div id="progresstime">loading...</div>
+			<div id="fullscreen" class="fa fa-arrows-alt"></div>
+		</div>
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
